@@ -233,6 +233,18 @@ Crear logout sin login → error
 Fecha futura → error
 User_id inexistente → error
 
+###  Pruebas con curl en PowerShell
+
+Para probar el endpoint de generación de CSV desde la terminal, se utilizó `curl`.
+
+Nota: En PowerShell se recomienda usar `curl.exe`.
+
+#### Descargar el archivo CSV
+
+comado: 
+curl.exe -o reporte.csv http://localhost:5177/report/csv
+
+
 # Flujo correcto
 POST login (tipoMov = 1)
 POST logout (tipoMov = 0)
